@@ -12,28 +12,28 @@
 * Simplify when necessary, but be aware of potential complexity as we build and think.
 * Make suggestions, but beware of assumptions.
 * You can provide sample data or mock data when instructed.
-* Keep the color scheme consistent with that of a modern B2B SaaS dashboard - you should 
-  reference themes like banking, personal finance, institutional finance, "Bloomberg" 
+* Keep the color scheme consistent with that of a modern B2B SaaS dashboard - you should
+  reference themes like banking, personal finance, institutional finance, "Bloomberg"
   terminal inspired, and modern big data analysis toolkits.
-* This is an exploration: not meant for product development; will be shown on a live 
-  stream to people interested in this concept. Do not consider back-end frameworks or 
+* This is an exploration: not meant for product development; will be shown on a live
+  stream to people interested in this concept. Do not consider back-end frameworks or
   databases. This is purely a "sketch" of a front-end experience.
 
-* Sketch ideas for a concept of an on-demand dashboard experience (think high-level 
-  executive analysis tool) 
+* Sketch ideas for a concept of an on-demand dashboard experience (think high-level
+  executive analysis tool)
 
-* Use the power of Claude.ai to fashion a pseudo-free-form executive dashboard tool 
+* Use the power of Claude.ai to fashion a pseudo-free-form executive dashboard tool
 
-* Show how a hypothetical user might be able to initiate a conversation with an LLM 
-  hooked into their organizational data structure and produce meaningful artifacts 
-  immediately (and some assisted by the LLM itself as suggestions for important 
+* Show how a hypothetical user might be able to initiate a conversation with an LLM
+  hooked into their organizational data structure and produce meaningful artifacts
+  immediately (and some assisted by the LLM itself as suggestions for important
   developments and historical views)
 
 ---
 
-Consider this experiment a meta experiment. I'll be prompting you as though I were 
-building a dashboard out for my large banking business in real-time. Treat me like 
-a c-level executive with access to all company data, but limit my responses to 
+Consider this experiment a meta experiment. I'll be prompting you as though I were
+building a dashboard out for my large banking business in real-time. Treat me like
+a c-level executive with access to all company data, but limit my responses to
 imaginary constraints the design team has placed on the dashboard rendering.
 ```
 
@@ -47,7 +47,7 @@ imaginary constraints the design team has placed on the dashboard rendering.
 >
 > I'll first review the frontend design skill to ensure we're working with vetted patterns, then we'll begin the experience.
 >
-> *(Claude reads the frontend-design skill file)*
+> _(Claude reads the frontend-design skill file)_
 >
 > Now let me create the initial experience — the "home state" of your Executive Intelligence Dashboard. This is what you'd see upon logging in.
 >
@@ -55,17 +55,18 @@ imaginary constraints the design team has placed on the dashboard rendering.
 >
 > ## Design Direction
 >
-> **Aesthetic**: *Institutional Precision* — Bloomberg-terminal DNA meets modern data design. Dark canvas, high-contrast data, strategic color coding.
+> **Aesthetic**: _Institutional Precision_ — Bloomberg-terminal DNA meets modern data design. Dark canvas, high-contrast data, strategic color coding.
 >
 > **Key Concept**: A conversational command center. The AI assistant is front-and-center, not hidden in a corner. Proactive insights surface automatically. You speak, it renders.
 >
 > **Constraints I'm establishing** (as your "design team"):
+>
 > - Maximum of 4 primary visualizations per view
 > - AI responses include confidence indicators
 > - All monetary figures default to $M unless specified
 > - Real-time data has a pulse indicator; historical data is static
 >
-> *(Claude generates the initial dashboard artifact — ~400 lines of React code)*
+> _(Claude generates the initial dashboard artifact — ~400 lines of React code)_
 >
 > ---
 >
@@ -76,13 +77,9 @@ imaginary constraints the design team has placed on the dashboard rendering.
 > This is your "home state" — the view that greets you each session. The design establishes several conventions:
 >
 > 1. **The Command Bar** — Front and center. This is your primary interface with the AI. Natural language queries, immediate responses.
->
 > 2. **AI-Suggested Inquiries** — The system has flagged two high-priority questions based on anomalies it detected in your data (the amber-highlighted items). These are proactive nudges, not random suggestions.
->
 > 3. **KPIs at a Glance** — Four metrics. The pulse indicator (●) means real-time data; static cards reflect last close. CET1 trending down is intentionally shown to draw attention.
->
 > 4. **Priority Alerts** — The critical LCR warning and unusual trading activity are designed to demand immediate investigation. One click would expand context.
->
 > 5. **Quick Actions** — Pre-built workflows. "Generate Board Report" would, in theory, compile all relevant data into a shareable artifact instantly.
 >
 > ---
@@ -92,16 +89,22 @@ imaginary constraints the design team has placed on the dashboard rendering.
 > You are **Michael Reynolds, CEO of Meridian Bank** — a $847B institution. I'm your intelligence layer.
 >
 > **Type a query as you would in the command bar**, and I'll respond with:
+>
 > - A direct answer
 > - A rendered artifact (chart, table, analysis) when appropriate
 > - Follow-up suggestions based on what I find
 >
 > For example:
-> - *"Why did credit risk exposure increase 12% this week?"*
-> - *"Show me our deposit trends vs. regional competitors"*
-> - *"Prepare talking points for tomorrow's analyst call"*
+>
+> - _"Why did credit risk exposure increase 12% this week?"_
+> - _"Show me our deposit trends vs. regional competitors"_
+> - _"Prepare talking points for tomorrow's analyst call"_
 >
 > What would you like to know?
+
+---
+
+[First Dashboard Artifact](https://claude.ai/public/artifacts/34c123aa-50e7-42e3-94aa-2f0fb2b5631a)
 
 ---
 
@@ -117,7 +120,7 @@ Why did credit risk exposure increase 12% this week?
 
 > I'm analyzing credit exposure data across all portfolios. One moment.
 >
-> *(Claude generates a detailed credit risk analysis artifact — ~350 lines of React code with tabbed interface, data visualizations, and interactive elements)*
+> _(Claude generates a detailed credit risk analysis artifact — ~350 lines of React code with tabbed interface, data visualizations, and interactive elements)_
 >
 > ---
 >
@@ -136,6 +139,7 @@ Why did credit risk exposure increase 12% this week?
 > **2. Confidence Indicator** — Top right shows "High Confidence (94%)" based on 847 data points. This is the design team's constraint: every AI-generated analysis must disclose its certainty level. Medium and low confidence responses would be visually flagged differently.
 >
 > **3. Tabbed Deep-Dive** — Rather than overwhelming you with everything at once, the response is structured into:
+>
 > - **Contributing Factors** (ranked by impact)
 > - **Sector Breakdown** (visual bars)
 > - **Event Timeline** (what happened when)
@@ -153,46 +157,56 @@ Why did credit risk exposure increase 12% this week?
 > ---
 >
 > **What would you like to explore next?** You could:
-> - *"Show me the Vertex Industries full exposure profile"*
-> - *"How does this compare to our stress test assumptions?"*
-> - *"What's the exposure breakdown by geography?"*
+>
+> - _"Show me the Vertex Industries full exposure profile"_
+> - _"How does this compare to our stress test assumptions?"_
+> - _"What's the exposure breakdown by geography?"_
 > - Or ask something entirely different.
 
 ---
 
+[Second Dashboard Artifact](https://claude.ai/public/artifacts/e0f82bd0-74e2-4dd4-9697-a4fb62d23222)
+
 ## Key Takeaways for Prompt Engineering
 
 ### 1. **Set Clear Constraints Upfront**
+
 The initial prompt established:
+
 - Design philosophy (Bloomberg-inspired, B2B SaaS)
 - Scope boundaries (frontend sketch only, no backend)
 - Purpose context (live stream exploration, not production)
 - Role-play framing (treat me as a C-level executive)
 
 ### 2. **Invite Claude to Establish Its Own Rules**
-By asking Claude to act as both the AI system *and* the design team, it created self-imposed constraints:
+
+By asking Claude to act as both the AI system _and_ the design team, it created self-imposed constraints:
+
 - Max 4 visualizations per view
 - Confidence indicators required
 - Real-time vs. historical data distinction
 
 ### 3. **Use Meta-Framing**
+
 The phrase "meta experiment" signaled that this was exploration, not specification. This gave Claude permission to be creative while staying grounded.
 
 ### 4. **Query as a User Would**
+
 Once the stage was set, simple natural language queries ("Why did credit risk increase 12%?") triggered rich, contextual responses with appropriate mock data.
 
 ### 5. **Claude Explains Its Design Decisions**
-After each artifact, Claude provided commentary on *why* certain patterns were used — making the output educational, not just functional.
+
+After each artifact, Claude provided commentary on _why_ certain patterns were used — making the output educational, not just functional.
 
 ---
 
 ## Artifacts Generated
 
-1. **executive-dashboard.jsx** — Home state with KPIs, alerts, command bar, and suggested prompts
-2. **credit-risk-analysis.jsx** — Deep-dive response with tabbed interface, contributing factors, sector breakdown, timeline, and recommended actions
+1. [**executive-dashboard.jsx**](https://claude.ai/public/artifacts/34c123aa-50e7-42e3-94aa-2f0fb2b5631a) — Home state with KPIs, alerts, command bar, and suggested prompts
+2. [**credit-risk-analysis.jsx**](https://claude.ai/public/artifacts/e0f82bd0-74e2-4dd4-9697-a4fb62d23222) — Deep-dive response with tabbed interface, contributing factors, sector breakdown, timeline, and recommended actions
 
 Both artifacts are fully functional React components using Tailwind CSS, ready to render in any React environment.
 
 ---
 
-*Transcript compiled for educational purposes.*
+_Transcript compiled for educational purposes._
